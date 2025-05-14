@@ -2,57 +2,81 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>ManiStudio — Запись на маникюр</title>
+  <title>Crazy Nails — Маникюр в центре</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      font-family: 'Arial', sans-serif;
       margin: 0;
-      padding: 0;
+      font-family: 'Arial', sans-serif;
       background-color: #fff0f5;
       color: #333;
     }
     header {
-      background-color: #ffb6c1;
-      padding: 30px;
+      background-color: #ff69b4;
+      padding: 40px 20px;
       text-align: center;
+      color: white;
     }
     header h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 40px;
+    }
+    header p {
+      font-size: 18px;
     }
     section {
-      padding: 20px;
-      max-width: 800px;
-      margin: auto;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
-    .services, .gallery, .form-section {
-      margin-bottom: 40px;
+    h2 {
+      color: #e75480;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
     }
     .gallery img {
       width: 30%;
-      margin: 1%;
       border-radius: 10px;
+      object-fit: cover;
     }
-    form {
+    .price-list {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    .price-list ul {
+      list-style: none;
+      padding: 0;
+    }
+    .price-list li {
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
       display: flex;
-      flex-direction: column;
+      justify-content: space-between;
     }
-    input, textarea, button {
-      margin-bottom: 15px;
-      padding: 10px;
-      border: 1px solid #ccc;
+
+    .telegram-button {
+      display: block;
+      width: max-content;
+      margin: 30px auto;
+      padding: 12px 24px;
+      background-color: #0088cc;
+      color: white;
+      text-decoration: none;
       border-radius: 8px;
       font-size: 16px;
+      font-weight: bold;
+      transition: background 0.3s;
     }
-    button {
-      background-color: #ff69b4;
-      color: white;
-      cursor: pointer;
+    .telegram-button:hover {
+      background-color: #007ab8;
     }
-    button:hover {
-      background-color: #e75480;
-    }
+
     footer {
       background-color: #ffb6c1;
       text-align: center;
@@ -64,42 +88,36 @@
 <body>
 
 <header>
-  <h1>ManiStudio</h1>
-  <p>Твоя студия идеального маникюра</p>
+  <h1>Crazy Nails</h1>
+  <p>Маникюр, который ты заслуживаешь</p>
 </header>
 
-<section class="services">
-  <h2>Наши услуги</h2>
-  <ul>
-    <li>Маникюр классический и аппаратный</li>
-    <li>Покрытие гель-лаком</li>
-    <li>Дизайн ногтей</li>
-    <li>Укрепление и восстановление ногтей</li>
-  </ul>
-</section>
-
-<section class="gallery">
-  <h2>Галерея</h2>
-  <div>
-    <img src="https://via.placeholder.com/200x200?text=Nail1" alt="Маникюр 1">
-    <img src="https://via.placeholder.com/200x200?text=Nail2" alt="Маникюр 2">
-    <img src="https://via.placeholder.com/200x200?text=Nail3" alt="Маникюр 3">
+<section>
+  <h2>Наши работы</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1617059811091-1db52db8e63e?auto=format&fit=crop&w=400&q=80" alt="Маникюр 1">
+    <img src="https://images.unsplash.com/photo-1581089781785-603411fa81f3?auto=format&fit=crop&w=400&q=80" alt="Маникюр 2">
+    <img src="https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=400&q=80" alt="Маникюр 3">
   </div>
 </section>
 
-<section class="form-section">
-  <h2>Записаться онлайн</h2>
-  <form action="#" method="POST">
-    <input type="text" name="name" placeholder="Ваше имя" required>
-    <input type="tel" name="phone" placeholder="Телефон" required>
-    <input type="date" name="date" required>
-    <textarea name="message" placeholder="Пожелания (по желанию)"></textarea>
-    <button type="submit">Записаться</button>
-  </form>
+<section>
+  <h2>Прайс (EUR)</h2>
+  <div class="price-list">
+    <ul>
+      <li><span>Маникюр классический</span><span>20 €</span></li>
+      <li><span>Аппаратный маникюр</span><span>25 €</span></li>
+      <li><span>Гель-лак (однотонный)</span><span>30 €</span></li>
+      <li><span>Дизайн 2 ногтя</span><span>5 €</span></li>
+      <li><span>Укрепление базы</span><span>10 €</span></li>
+    </ul>
+  </div>
+
+  <a class="telegram-button" href="https://t.me/justmary19" target="_blank">Записаться в Telegram</a>
 </section>
 
 <footer>
-  © 2025 ManiStudio — г. [Твой город]. Все права защищены.
+  © 2025 Crazy Nails — Все права защищены.
 </footer>
 
 </body>
