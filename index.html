@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>ManiStudio — Запись на маникюр</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff0f5;
+      color: #333;
+    }
+    header {
+      background-color: #ffb6c1;
+      padding: 30px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .services, .gallery, .form-section {
+      margin-bottom: 40px;
+    }
+    .gallery img {
+      width: 30%;
+      margin: 1%;
+      border-radius: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+    input, textarea, button {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #ff69b4;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #e75480;
+    }
+    footer {
+      background-color: #ffb6c1;
+      text-align: center;
+      padding: 15px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ManiStudio</h1>
+  <p>Твоя студия идеального маникюра</p>
+</header>
+
+<section class="services">
+  <h2>Наши услуги</h2>
+  <ul>
+    <li>Маникюр классический и аппаратный</li>
+    <li>Покрытие гель-лаком</li>
+    <li>Дизайн ногтей</li>
+    <li>Укрепление и восстановление ногтей</li>
+  </ul>
+</section>
+
+<section class="gallery">
+  <h2>Галерея</h2>
+  <div>
+    <img src="https://via.placeholder.com/200x200?text=Nail1" alt="Маникюр 1">
+    <img src="https://via.placeholder.com/200x200?text=Nail2" alt="Маникюр 2">
+    <img src="https://via.placeholder.com/200x200?text=Nail3" alt="Маникюр 3">
+  </div>
+</section>
+
+<section class="form-section">
+  <h2>Записаться онлайн</h2>
+  <form action="#" method="POST">
+    <input type="text" name="name" placeholder="Ваше имя" required>
+    <input type="tel" name="phone" placeholder="Телефон" required>
+    <input type="date" name="date" required>
+    <textarea name="message" placeholder="Пожелания (по желанию)"></textarea>
+    <button type="submit">Записаться</button>
+  </form>
+</section>
+
+<footer>
+  © 2025 ManiStudio — г. [Твой город]. Все права защищены.
+</footer>
+
+</body>
+</html>
